@@ -15,7 +15,10 @@
 
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/distribution/sw.js');
+        navigator.serviceWorker.register('/distribution/sw.js');
+        console.log('Service worker installed');
+    } else {
+        console.error('Service worker not installed');
     }
   </script>
 </body>
