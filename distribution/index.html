@@ -15,7 +15,8 @@
 
   <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/distribution/sw.js');
+        const res = navigator.serviceWorker.register('/distribution/distribution/sw.js');
+        console.log(res)
         console.log('Service worker installed');
     } else {
         console.error('Service worker not installed');
