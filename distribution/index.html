@@ -18,6 +18,12 @@
         const res = navigator.serviceWorker.register('/distribution/distribution/sw.js');
         console.log(res)
         console.log('Service worker installed');
+
+        if (window.navigator.standalone) {
+            console.log("Запущено как PWA");
+        } else {
+            console.log("Запущено в Safari");
+        }
     } else {
         console.error('Service worker not installed');
     }
