@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SomeAppName Installer</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Install SomeAppName</h1>
+  <p>Click the button below to install the iOS application:</p>
+
+  <a href="itms-services://?action=download-manifest&url=https://klasterstorm.github.io/distribution/app.plist">
+    <button>Install App</button>
+  </a>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/distribution/sw.js');
+    }
+  </script>
+</body>
+</html>
