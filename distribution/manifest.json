@@ -1,7 +1,7 @@
 {
   "name": "SomeDisplayName",
   "short_name": "SomeApp",
-  "start_url": "/distribution/index.html",
+  "start_url": "/distribution/distribution/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
